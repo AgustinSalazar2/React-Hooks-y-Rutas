@@ -23,7 +23,7 @@ function App() {
   // ];
 
 
-  const [ user, authDispatch ] = useReducer(authReducer, { isLogged: false })
+  const [ user, authDispatch ] = useReducer(authReducer, init)
 
   return (
     <AuthContext.Provider value={{

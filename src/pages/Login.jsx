@@ -15,7 +15,7 @@ export const Login = () => {
     <div className='container d-block'>
       <main className="form-signin w-100 m-auto">
         <form className='form-control'>
-          <img className="mb-4" src={img} alt="carrito" width={72} height={57} />
+          {/* <img className="mb-4" src={img} alt="carrito" width={72} height={57} /> */}
           <h1 className="h3 mb-3 fw-normal">Inicio de Sesión</h1>
           <div className="form-floating mb-2">
             <input type="text" className="form-control" id="floatingInput" placeholder="Username" />

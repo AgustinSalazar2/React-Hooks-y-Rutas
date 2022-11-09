@@ -3,6 +3,11 @@ import { type } from '../types/type'
 export const authReducer = (state, action) => {
     switch (action.type) {
         case type.login:
+            // JSON.stringify(localStorage.setItem('user',{
+            //     ...action.payload,
+            //     isLogged: true
+            // }))
+            
             return {
                 isLogged: true,
                 ...action.payload
@@ -10,6 +15,6 @@ export const authReducer = (state, action) => {
         case type.logout:
             return { isLogged: false }
         default:
-            return 
+            return state
     }
 }

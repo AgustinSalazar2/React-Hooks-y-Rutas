@@ -27,13 +27,13 @@ export const NavBar = () => {
               </li>
 
               <li className="nav-item">
-                <button className="w-100 btn btn-lg btn-primary">Cerrar Sesión</button>
+                <button onClick={()=>authDispatch({type: type.logout})} className="w-100 btn btn-lg btn-primary">Cerrar Sesión</button>
               </li>
         
             </ul>
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button onClick={()=>authDispatch({type : type.logout})} className="btn btn-outline-success">Search</button>
+              <button className="btn btn-outline-success">Search</button>
             </form>
           </div>
         </div>
