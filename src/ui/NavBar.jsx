@@ -12,7 +12,7 @@ export const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/*">Navbar</NavLink>
+          <NavLink className="navbar-brand" to="/">Navbar</NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" />
           </button>
@@ -23,11 +23,11 @@ export const NavBar = () => {
               </li>
               
               <li className="nav-item">
-                <NavLink className="nav-link" to='/todos'>Link</NavLink>
+                <NavLink className="nav-link active" to='/todos'>Todos</NavLink>
               </li>
-
+              
               <li className="nav-item">
-                <button onClick={()=>authDispatch({type: type.logout})} className="w-100 btn btn-lg btn-primary">Cerrar Sesión</button>
+                <button onClick={()=>authDispatch({type: type.logout})} className=" btn btn-sm btn-danger">Cerrar Sesión</button>
               </li>
         
             </ul>
